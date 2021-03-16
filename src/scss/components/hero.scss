@@ -1,0 +1,65 @@
+.hero {
+  padding: 100px 0 30px;
+  overflow: hidden;
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    color: #2f281e;
+  }
+  &__row {
+    align-items: center;
+  }
+  &__img--big {
+    display: flex;
+    background: url("../img/png/background.png");
+    width: 100%;
+    min-height: 438px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  &__description {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    max-width: 436px;
+    line-height: 1.5;
+    margin: 36px 0 60px;
+  }
+  &__image {
+    position: absolute;
+    &:first-child {
+      left: 0;
+      top: -5%;
+    }
+    &:nth-child(2) {
+      bottom: -10%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: blackgirl 3s ease-in-out infinite forwards;
+    }
+    &:nth-child(3) {
+      right: 0;
+      top: -12%;
+      animation: violett 2s ease-in-out infinite forwards;
+    }
+  }
+
+  @keyframes blackgirl {
+    0% {
+      bottom: -10%;
+    }
+    50% {
+      bottom: 10%;
+    }
+  }
+  @keyframes violett {
+    0% {
+      top: -12%;
+    }
+    50% {
+      top: 10%;
+    }
+  }
+}

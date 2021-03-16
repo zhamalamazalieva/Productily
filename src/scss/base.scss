@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn {
+  background-color: #ff9900;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  outline: none;
+  border: none;
+  transition: 0.4s;
+  border: 1px solid transparent;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #bcd0e5;
+    color: #173a56;
+  }
+}
